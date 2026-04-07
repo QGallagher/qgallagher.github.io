@@ -16,10 +16,10 @@ author_profile: true
       {% for pub in pubs %}
         <li class="publications-menu__item">
           <h3 class="publications-menu__title">{{ pub.title }}</h3>
-          <p class="publications-menu__authors"><strong>Authors:</strong> {{ pub.authors }}</p>
-          <p class="publications-menu__journal"><strong>Journal:</strong> {{ pub.journal }}</p>
+          <p class="publications-menu__authors">{{ pub.authors }}</p>
+          <p class="publications-menu__journal"><strong>Journal:</strong> {{pub.journal}}</p>
           {% if pub.manuscript_url %}
-            <p class="publications-menu__link"><a href="{{ pub.manuscript_url }}" target="_blank" rel="noopener">Read manuscript</a></p>
+            <p class="publications-menu__link"><a href="{{ pub.manuscript_url }}" target="_blank" rel="noopener">Link</a></p>
           {% endif %}
         </li>
       {% endfor %}
