@@ -60,7 +60,7 @@
 .publications-menu__item {
   display: flex;
   flex-direction: column;
-  gap: 0.35rem;
+  gap: 0.15rem;
   padding: 0.8rem 0.25rem;
   border-bottom: 1px solid #e6ebf0;
 }
@@ -69,15 +69,17 @@
   border-bottom: 0;
 }
 
-.publications-menu__title {
+.publications-menu h3.publications-menu__title {
   margin: 0;
   font-size: 1.05rem;
+  line-height: 1.25;
 }
 
-.publications-menu__authors,
-.publications-menu__journal,
-.publications-menu__link {
+.publications-menu p.publications-menu__authors,
+.publications-menu p.publications-menu__journal,
+.publications-menu p.publications-menu__link {
   margin: 0;
+  line-height: 1.25;
 }
 
 .publications-menu__link a {
