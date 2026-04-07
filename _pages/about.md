@@ -13,8 +13,9 @@ Quinn M. Gallagher is a Ph.D. candidate at Princeton University's Department of 
 
 Research Interests
 ------
-My reseach interests span an array of subjects that I think, when combined, can develop autonomous computational platforms for the accelerated discovery of new materials. These include:
-* Improving MD simulations by identifying methods on the Pareto front of speed and accuracy.
+My reseach interests span an array of subjects that I think, when combined, can be used by autonomous computational platforms for the accelerated discovery of new materials. These include:
+* Improving MD simulations by identifying methods on the Pareto front of speed and accuracy, including machine learning force fields.
 * Automating the extraction of physical insights from MD simulations.
-* Maximally informative data selection for sample-efficient machine learning.
-* Using foundation models as informative priors for determining structure-function relationships.
+* Informative data selection for sample-efficient machine learning, including active learning and Bayesian optimization.
+* Relationships between material representations and prediction complexity.
+* Foundation models as informative priors for characterizing structure-function relationships.
