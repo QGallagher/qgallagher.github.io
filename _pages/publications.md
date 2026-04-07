@@ -32,17 +32,17 @@ A. Maroulis, D. Waynor, **Q.M. Gallagher**, R.A. Patel, M. Tamasi, D.C. Radford,
 [Link](https://pubs.rsc.org/en/content/articlepdf/2025/dd/d5dd00525f)
 
 ### Pressure-Consistent Iterative Boltzmann Inversion for Coarse-Grained Molecular Dynamics
-Z. Yu, R.J. Szukalo, **Q.M. Gallagher**, M.A. Webb,  
+Z. Yu, R.J. Szukalo, **Q.M. Gallagher**, M.A. Webb  
 *Journal of Chemical Theory and Computation*, 2025. [Link](https://doi.org/10.1021/acs.jctc.5c01190)
 
 ### Sustainable Recovery of Perfluoroalkyl Acids Using a Reusable Molecular Cage
-M. Pérez-Ferreiro, **Q.M. Gallagher**, M.A. Webb, A. Criado, J. Mosquera,  
+M. Pérez-Ferreiro, **Q.M. Gallagher**, M.A. Webb, A. Criado, J. Mosquera  
 *Journal of Materials Chemistry A*, 2025. [Link](https:www.doi.org/10.1039/d5ta02758f)
 
 ### Data Efficiency of Classification Strategies for Chemical and Materials Design
-**Q.M. Gallagher**, M.A. Webb,  
+**Q.M. Gallagher**, M.A. Webb  
 *Digital Discovery*, 2025. [Link](https:www.doi.org/10.1039/d4dd00298a)
 
 ### Engineering a Surfactant Trap via Postassembly Modification of an Imine Cage
-M. Pérez-Ferreiro, **Q.M. Gallagher**, A.B. León, M.A. Webb, A. Criado, J. Mosquera,  
+M. Pérez-Ferreiro, **Q.M. Gallagher**, A.B. León, M.A. Webb, A. Criado, J. Mosquera  
 *Chemistry of Materials*, 2024. [Link](https:www.doi.org/10.1021/acs.chemmater.4c01808)
