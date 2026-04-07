@@ -8,11 +8,11 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-site_theme               : "air" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
-title                    : "Quinn M. Gallagher"
+site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+title                    : "Quinn's Academic Portfolio"
 title_separator          : "-"
 name                     : &name "Quinn Gallagher"
-description              : &description "Quinn Gallagher's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
+description              : &description "Quinn Gallagher's Academic Portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : https://qgallagher.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
                                                            # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -24,13 +24,13 @@ repository               : "QGallagher/qgallagher.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Quinn M. Gallagher"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
-  uri              : # URL
-  email            : "none@example.org" 
+  bio              : "Ph.D. Candidate"
+  location         : "Princeton, NJ"
+  employer         : "Princeton University"
+  uri              : "https://cbe.princeton.edu/people/quinn-gallagher"
+  email            : "qg1361@princeton.edu" 
 
   # Academic websites
   academia         : # URL
