@@ -1,0 +1,390 @@
+%-------------------------
+% CV in Latex
+% Author : Quinn Gallagher, Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    pdftitle={Overleaf Example},
+    pdfpagemode=FullScreen,
+    }
+
+\usepackage{etaremune}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      #3 & \textit{#4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeAwardItem}[3]{
+  \vspace{-4pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1}, {#2} & {#3} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+\begin{center}
+    \textbf{\huge \scshape Quinn M. Gallagher}\\
+    \vspace{3pt}
+    \textit{\large Ph.D. Candidate, Princeton University}\\
+    E-Quad A108, Princeton University, Princeton, NJ 08540\\
+    \texttt{qg1361@princeton.edu} $|$ (610) 505-5458 $|$ \href{https://scholar.google.com/citations?hl=en&user=9t3fzmUAAAAJ&view_op=list_works&sortby=pubdate}{Google Scholar} $|$ \href{https://qgallagher.github.io}{Personal Website}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+
+  \resumeSubHeadingListStart
+    % \resumeSubheading
+    %   {National Institute of Standards and Technology}{Gaithersburg, MD}
+    %   {National Research Council Postdoctoral Fellow}{Aug. 2027 -- Present}
+    %   \textit{Advisor}: Debra J. Audus
+    \resumeSubheading
+      {Princeton University}{Princeton, NJ}
+      {Ph.D. Candidate in Chemical and Biological Engineering}{Aug. 2022 -- Present}
+      \textit{Advisor}: Michael A. Webb
+    \resumeSubheading
+      {University of Pennsylvania}{Philadelphia, PA}
+      {B.S.E. in Chemical and Biomolecular Engineering, \textit{summa cum laude}}{Aug. 2018 -- May 2022}
+  \resumeSubHeadingListEnd
+
+% \section{Skills}
+
+% Molecular dynamics (\texttt{LAMMPS}, \texttt{OpenMM}, \texttt{Gromacs}), machine learning (\texttt{scikit-learn}, \texttt{PyTorch}), active learning, Bayesian optimization (\texttt{GPyTorch}, \texttt{GPy}), machine learning force fields (\texttt{TorchANI}, \texttt{UF3}), density functional theory (\texttt{Psi4}, \texttt{ORCA})\\
+
+%-----------HONORS AND AWARDS-----------
+\section{Honors and Awards}
+  \resumeSubHeadingListStart
+    \resumeAwardItem{Hack Award for Water and the Environment}{High Meadows Environmental Institute}{2026}\\
+    \resumeAwardItem{AI for Accelerating Invention Graduate Fellow}{Princeton University}{2025}\\
+    \resumeAwardItem{William R. Schowalter Travel Grant}{Princeton University}{2025, 2026}\\
+    \resumeAwardItem{Excellence in Teaching Award}{Princeton University}{2024}\\
+    \resumeAwardItem{Francis Robbins Upton Fellowship}{Princeton University}{2022}\\
+    \resumeAwardItem{NSF Graduate Research Fellowship}{National Science Foundation}{2022}\\
+    \resumeAwardItem{Hugh Otto Wolf Memorial Prize}{University of Pennsylvania}{2022}\\
+    \resumeAwardItem{Future Leader in Chemical Engineering}{North Carolina State University}{2021}\\
+    \resumeAwardItem{Penn Engineering Exceptional Service Award}{University of Pennsylvania}{2021}\\
+    \resumeAwardItem{Tau Beta Pi}{University of Pennsylvania}{2021}\\
+    \resumeAwardItem{Manfred Altman Memorial Award}{University of Pennsylvania}{2020}\\
+    \resumeAwardItem{Holtz Award}{University of Pennsylvania}{2019}\\
+  \resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS-----------
+\section{Publications}
+
+\begin{etaremune}
+
+% \normalsize \item{Robust Force Field Design using Thermodynamic Geometry-informed Adaptive Sampling}\\
+% \vspace{2pt}
+% \small P. Baron$^*$, \textbf{Q.M. Gallagher}$^*$, M.A. Webb, \textit{Journal of Chemical Physics} (2026). Submitted.
+% [\href{https://chemrxiv.org/doi/full/10.26434/chemrxiv.15001127/v1}{Preprint}] $^*$Equal contribution
+
+% \normalsize \item{Copolymer-facilitated Stabilization of Lipase via High-Throughput Experimentation and Machine Learning}\\
+% \vspace{2pt}
+% \small E. Ahmed$^*$, \textbf{Q.M. Gallagher}$^*$, R.A. Patel, C.D. Ramirez, M.A. Webb, A.J. Gormley, \textit{Advanced Materials} (2026). Submitted.
+% [\href{https://chemrxiv.org/doi/full/10.26434/chemrxiv.15001127/v1}{Preprint}] $^*$Equal contribution
+
+% \normalsize \item{Representing (Complex) Polymers for Machine Learning}\\
+% \vspace{2pt}
+% \small S. Jiang, R. Patel, \textbf{Q.M. Gallagher}, A. Chen, M. Qi, M.A. Webb, \textit{MRS Bulletin} (2026). Submitted.
+% [\href{https://chemrxiv.org/doi/full/10.26434/chemrxiv.15001127/v1}{Preprint}]
+
+% \normalsize \item{Distilling Universal Machine Learned Potentials with $\Delta$-Learning for Fast and Accurate Polymer Simulations}\\
+% \vspace{2pt}
+% \small \textbf{Q.M. Gallagher}, S. Zhang, M.A. Webb, \textit{ChemRxiv} (2026). Submitted.
+% [\href{https://chemrxiv.org/doi/full/10.26434/chemrxiv.15001127/v1}{Preprint}]
+
+% \normalsize \item{Improving Extrapolative Molecular Property Prediction for Screening, Bayesian Optimization, and Guided Generation}\\
+% \vspace{2pt}
+% \small \textbf{Q.M. Gallagher}, M.A. Webb, \textit{ChemRxiv} (2026). Submitted.
+% [\href{https://chemrxiv.org/doi/full/10.26434/chemrxiv.15001127/v1}{Preprint}]
+
+\normalsize \item{Minimizing Data Requirements for Material Property Prediction via Cluster-based Training Set Selection}\\
+\vspace{2pt}
+\small \textbf{Q.M. Gallagher}, S. Hasko, M.A. Webb, \textit{ChemRxiv} (2026). Revisions submitted at \textit{Nature Computational Science}.
+[\href{https://chemrxiv.org/doi/full/10.26434/chemrxiv.15001127/v1}{Preprint}]
+
+\item{\normalsize A Local Structural Basis to Resolve Amorphous Ices}\\
+\vspace{2pt}
+\small \textbf{Q.M. Gallagher}$^*$, R.J. Szukalo$^*$, N. Giovambattista, P.G. Debenedetti, M.A. Webb, \textit{arXiv} (2026). Revisions submitted at \textit{Nature Communications}. [\href{https://arxiv.org/abs/2601.17488}{Preprint}]
+\vspace{2pt}\footnotesize $^*$Equal contribution
+
+\normalsize \item{A User’s Guide to Your First Self-Driving Liquid Handling Lab}\\
+\vspace{2pt}
+\small A. Maroulis, D. Waynor, \textbf{Q.M. Gallagher}, R.A. Patel, M. Tamasi, D.C. Radford, M.A. Webb, A.J. Gormley, \textit{Digital Discovery} (2026). [\href{https://pubs.rsc.org/en/content/articlepdf/2025/dd/d5dd00525f}{Link}]
+
+\normalsize \item{Pressure-Consistent Iterative Boltzmann Inversion
+for Coarse-Grained Molecular Dynamics}\\
+\vspace{2pt}
+\small Z. Yu, R.J. Szukalo, \textbf{Q.M. Gallagher}, M.A. Webb, \textit{Journal of Chemical Theory and Computation}, 21, 20 (2025). [\href{https://doi.org/10.1021/acs.jctc.5c01190}{Link}]
+
+\normalsize \item{Sustainable Recovery of Perfluoroalkyl Acids Using a Reusable Molecular Cage}\\
+\vspace{2pt}
+\small M. Pérez-Ferreiro, \textbf{Q.M. Gallagher}, M.A. Webb, A. Criado, J. Mosquera, \textit{Journal of Materials Chemistry A}, 13, 30 (2025). [\href{https:www.doi.org/10.1039/d5ta02758f}{Link}]
+
+\normalsize \item{ Bayesian Optimization Hackathon for Chemistry and Materials}\\
+\vspace{2pt}
+% \small S. Baird, M. Ansari, Z. Afzal, Q. Ai, A. Al-Feghali, M. Alain, M. Altamirano, T. Andrews, A.S. Anker, R. Ansari, S.A. Appiah, R. Astudillo, R. Azam, M. Azzouzi, S.K. BVS, B. Blaiszik, A. Borisova, A. Bran, P. Cai, T. Chen, C. Chong, S. Corapi, M. Croxall, G. Dovonon, A. Falkowski, G. Fisicaro, M. Fitzner, \textbf{Q.M. Gallagher}, S. Gaznaghi, J. Genzling, C. Griehl, R. Griffiths, T. Guo, K. Guo, N. Gupta, A. Gupta, M. Haddadnia, Y. Han, J. Hoche, A.V. Hopp, M. Huang, A. Ijishakin, R. Issa, Y. Kang, J. Kim, A. Kudva, R. Laplaza, M. Lederbauer, S.X. Leong, P.W. Leu, V.M. Li, M. Li, T. Liu, S. Lo, J. Lala, O. Mamun, O. Melville, M. Mitsakis, C. Movassaghi, M.R. Muthyala, M. Muller, B. Nan, D. Nguyen, D. Ongari, A. Onwuli, C. Ozkan, S. Pablo-Garcia, E. Pan, R. Panda, S. Park, J. Park, D. Plessers, T. Plotz, E.M. Rajaonson, B. Rankovic, J. Ren, R. Rihana, J. Ruza, A.S. Nair, C. Salbego, E.L. Saldivar, A. San, C. Schenk, S.P. Schmid, D. Schubert, P. Schwaller, C. Ser, M.S. Priyadarshini, Y. Shen, K. Shen, J. Shi, F. Sorourifar, A. Sosic, T. Sparks, J.C. Spies, F. Strieth-Kalthoff, S. Sudhakar, A. Sundar, A. Tamburro, C. Tamura, Y. Tang, D. Tang, N. Thota, G. Tom, S. Truong, R.V. Albornoz, L. Walter, L. Wang, F. Wang, A. Wang, Y. Wang, J. Watchorn, B. Weiser, G. Wellawatte, A. Wieczorek, T. Wurger, I. Yakavets, J. Zeitler, S. Zhang, Y. Zhao, Y. Zhu, R. Zhu, Y. Zo 
+\small S. Baird, ..., \textbf{Q.M. Gallagher}, ..., Y. Zo, \textit{ChemRxiv} (2025). [\href{https:www.doi.org/10.26434/chemrxiv-2025-dzh5z}{Preprint}]
+
+\normalsize \item{ Data Efficiency of Classification Strategies for Chemical and Materials Design}\\
+\vspace{2pt}
+\small \textbf{Q.M. Gallagher}, M.A. Webb, \textit{Digital Discovery}, 4, 1 (2025). [\href{https:www.doi.org/10.1039/d4dd00298a}{Link}]
+
+\normalsize \item{ Engineering a Surfactant Trap via Postassembly Modification of an Imine Cage}\\
+\vspace{2pt}
+\small M. Pérez-Ferreiro, \textbf{Q.M. Gallagher}, A.B. León, M.A. Webb, A. Criado, J. Mosquera, \textit{Chemistry of Materials}, 36, 18 (2024). [\href{https:www.doi.org/10.1021/acs.chemmater.4c01808}{Link}]
+
+\end{etaremune}
+
+% \section{Publications (in Preparation)}
+
+% \begin{etaremune}
+
+% \normalsize \item{Representing (Complex) Polymers for Machine Learning}\\
+% \vspace{2pt}
+% \small S. Jiang, R. Patel, \textbf{Q.M. Gallagher}, A. Chen, Q. Zhang, M.A. Webb
+
+% \normalsize \item{Copolymer-facilitated Stabilization of Lipase via High-Throughput Experimentation and Machine Learning}\\
+% \vspace{2pt}
+% \small E. Ahmed$^*$, \textbf{Q.M. Gallagher}$^*$, R.A. Patel, C.D. Ramirez, M.A. Webb, A.J. Gormley, $^*$Equal contribution
+
+% \normalsize \item{Extrapolative Molecular Property Prediction for Screening, Bayesian Optimization, and Guided Generation}\\
+% \vspace{2pt}
+% \small \textbf{Q.M. Gallagher}, M.A. Webb
+
+% \normalsize \item{Distilling Machine Learned Potentials with $\Delta$-Learning for Fast and Accurate Polymer Simulations}\\
+% \vspace{2pt}
+% \small \textbf{Q.M. Gallagher}, S. Zhang, M.A. Webb
+
+% \normalsize \item{Robust Force Field Design using Thermodynamic Geometry-informed Adaptive Sampling}\\
+% \vspace{2pt}
+% \small P.B. Baron$^*$, \textbf{Q.M. Gallagher}$^*$, $^*$Equal contribution
+
+% \end{etaremune}
+
+%-----------TEACHING-----------
+\section{Teaching}
+
+\textbf{Princeton University}
+    \resumeSubHeadingListStart
+
+        \vspace{-4pt}\item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            Guest Lecturer for CBE 512: Machine Learning for Chemical Science and Engineering & {\textit{October 2025}} \\
+        \end{tabular*}
+    
+        \vspace{-4pt}\item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            Teaching Assistant for CBE 250: Separations in Chemical Engineering & {\textit{Aug. 2024 -- Dec. 2024}} \\
+        \end{tabular*}
+    
+        \vspace{-4pt}\item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            Teaching Assistant for CBE 503: Advanced Thermodynamics & \textit{Aug. 2023 -- Dec. 2023} \\
+        \end{tabular*}
+        \small Received the Excellence in Teaching Award from Princeton's School of Engineering and Applied Science.\\
+    \resumeSubHeadingListEnd
+
+\textbf{University of Pennsylvania}
+
+    \resumeSubHeadingListStart
+        \vspace{-4pt}\item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            Teaching Assistant for CIS 160: Mathematical Foundations of Computer Science & {\textit{Jan. 2020 -- May 2022}} \\
+        \end{tabular*}
+    
+        \vspace{-4pt}\item
+        \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+            Teacher for Access Engineering & \textit{Jan. 2019 -- May 2022} \\
+        \end{tabular*}
+    \resumeSubHeadingListEnd
+
+%-----------MENTORING-----------
+\section{Mentoring}
+\textbf{Undergraduate Students}: 
+\begin{itemize}[noitemsep]
+\item Khang Tran, AI Fluency Program (March 2026 --)
+\item Sonia Hasko, CBE (Sept. 2024 -- May 2025)\\
+\item David Opong, CBE (Sept. 2023 -- May 2024) \\
+\end{itemize}
+\textbf{High School Students}: 
+\begin{itemize}[noitemsep]
+\item Michelle Gao, Laboratory Learning Program (May 2024 -- Aug. 2024)
+\end{itemize}
+
+% %-----------UNIVERSITY SERVICE-----------
+\section{Academic Service}
+
+\textbf{Journal Reviewer}: \textit{ACS Macro Letters}\\
+\vspace{5pt}
+\textbf{Professional Membership}: AIChE, ACS\\
+
+\section{Outreach}
+
+\resumeSubHeadingListStart
+    \vspace{-4pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{Graduate Fellow}, AI Lab, AI for Accelerating Invention Initiative, Princeton University & {\textit{Jan. 2026 -- }} \\
+    \end{tabular*}
+
+    \vspace{-4pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{Reviewer}, NSF GRFP Workshop for CBE Students, Princeton University & \textit{Sept. 2022 --} \\
+    \end{tabular*}
+
+    \vspace{-4pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{President}, Access Engineering, University of Pennsylvania & \textit{Sept. 2018 -- May 2022} \\
+    \end{tabular*}
+
+    \vspace{-4pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{Vice President}, Student Chapter of AIChE, University of Pennsylvania & \textit{Sept. 2018 -- May 2022} \\
+    \end{tabular*}
+
+    \vspace{-4pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{Secretary}, Engineering Deans' Advisory Board, University of Pennsylvania & \textit{Sept. 2018 -- May 2022} \\
+    \end{tabular*}
+\resumeSubHeadingListEnd
+
+%-----------PUBLICATIONS-----------
+\section{Presentations}
+
+\begin{etaremune}
+
+\item{\normalsize ``Improving Machine Learning Extrapolation for Molecular Discovery'' (\textit{Poster}) \textbf{ChemAI NYC}, 2026.\\
+
+\item{\normalsize ``Improving Extrapolative Machine Learning for Molecular Design'' (\textit{Poster}) \textbf{NIST Artificial Intelligence for Materials Science Workshop}, 2026.\\
+
+\item{\normalsize ``Improving Extrapolative Molecular Property Prediction for Screening, Optimization, and Guided Generation'' (\textit{Poster}) \textbf{CECAM Flagship Workshop}, \textit{Physics-aware Machine Learning for Molecules and Materials}, 2026.}\\
+
+\item{\normalsize ``Minimizing Data Requirements for Material Property Prediction \textit{via} Cluster-based Training Set Selection'' (\textit{Poster}) \textbf{Gordon Research Conference}, \textit{AI for Materials, Energy and Chemical Sciences}, 2026.}\\
+
+\item{\normalsize ``Automatic Construction of Data-Driven Collective Variables Using Local Atomic Environments'' (\textit{Talk}) \textbf{AIChE Annual Meeting}, \textit{CoMSEF: Machine Learning for Soft and Hard Materials II: Hard Matter and Methods}, 2025.}\\
+
+\item{\normalsize ``Maximizing the Data Efficiency of Experimental Planning Algorithms for Quantifying Material Structure-Property Relationships'' (\textit{Talk}) \textbf{AIChE Annual Meeting}, \textit{CoMSEF: Automated Molecular and Materials Discovery: Integrating Machine Learning, Simulation, and Experiment}, 2025.}\\
+
+\item{\normalsize ``Data-driven Order Parameters for Atomic Systems: A Case Study on Amorphous Ices'' (\textit{Talk}) \textbf{Princeton CBE Graduate Student Symposium}, 2025.}\\
+
+\item{\normalsize ``An Interpretable Machine Learning Tool for the Classification
+of Atomic States in Molecular Simulations'' (\textit{Poster}) \textbf{6th Molecular Simulations Workshop (NJIT)}, 2025.}\\
+
+\item{\normalsize ``Minimizing Data Requirements for Material Property Prediction'' (\textit{Poster}) \textbf{AutoML Center for Accelerated Formulations Engineering Workshop}, 2025.}\\
+
+\item{\normalsize ``Maximizing the Data Efficiency of Experimental Planning Algorithms for Quantifying Material Structure-Property Relationships'' (\textit{Poster}) \textbf{Accelerate Conference}, 2025.}\\
+
+\item{\normalsize ``Maximizing the Data Efficiency of Experimental Planning Algorithms for Quantifying Material Structure-Property Relationships'' (\textit{Poster}) \textbf{New York City AI4Chemistry Summit}, 2025.}\\
+
+\item{\normalsize ``Data-driven identification of collective variables for transitions between high-density amorphous and low-density amorphous ice'' (\textit{Talk}) \textbf{American Chemical Society, Middle Atlantic Regional Meeting}, 2025.}\\
+
+\item{\normalsize ``Fewer Experiments, More Knowledge:
+Data-Efficient Machine Learning for Materials Design'' (\textit{Poster}) \textbf{Princeton CBE Graduate Student Symposium}, 2024.}\\
+
+\item{\normalsize ``Modulating Heterochromatin Formation for Direct Cell Reprogramming'' (\textit{Talk}) \textbf{North Carolina State University, Future Leaders in Chemical Engineering National Award Symposium}, 2021.}\\
+
+\end{etaremune}
+
+\end{document}
